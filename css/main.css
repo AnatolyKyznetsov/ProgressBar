@@ -1,0 +1,25 @@
+.Progress {
+  position: relative;
+  display: inline-block; }
+  .Progress__ring {
+    position: relative;
+    z-index: 2; }
+    .Progress__ring_static {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1; }
+  .Progress__circle {
+    transform-origin: center;
+    transform: rotate(-90deg);
+    transition: stroke-dashoffset 1.2s linear;
+    stroke-dasharray: 955.044166691297;
+    stroke-dashoffset: 955.044166691297; }
+  .Progress__counter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 60px;
+    font-family: sans-serif; }

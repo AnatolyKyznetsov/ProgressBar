@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress bar</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="Progress">
+        <div class="Progress__counter"><span class="js-progressCounter">0</span>%</div>
+        <svg class="Progress__ring" width="444" height="444" >
+            <!-- r =( width / 2) - (stroke-width * 2) -->
+            <circle class="Progress__circle js-progressCircle" stroke="#2ECC71" fill="transparent" stroke-width="35" cx="222" cy="222" r="152" stroke-linecap="round" />
+        </svg>
+        <svg class="Progress__ring_static" width="444" height="444" >
+            <circle stroke="#ECECEC" fill="transparent" stroke-width="35" cx="222" cy="222" r="152" />
+        </svg>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
